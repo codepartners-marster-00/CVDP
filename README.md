@@ -36,13 +36,13 @@ __2023.09시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다__
 ## 지난 시즌
 #### CPCS-23S2
 > __2023.05-2023.08__ <br>
-> ✔ [미션3번 클리어-1](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01_scroll.html) <br>
+> ✔ [scroll미션 3번 클리어-1](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01_scroll.html) <br>
 >  스크롤 헤더 고정 + 스크롤시 섹션마다 탭이동 + 우측 플로팅 메뉴 고정 <br>
 > <br>
-> ✔ [미션3번 클리어-2](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01_yong.html) <br>
+> ✔ [scroll미션 3번 클리어-2](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01_yong.html) <br>
 >  스크롤헤더 고정 + 스타일 변경 + 스크롤시 섹션마다 탭이동 + 우측 플로팅 메뉴 고정 <br>
 > <br>
-> ✔ [실무예제](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code08/index.html) <br>
+> ✔ [scroll 실무예제](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code08/index.html) <br>
 >  네비게이션 UI , map 객체의 활용  <br>
 
 #### CPCS-23S1
