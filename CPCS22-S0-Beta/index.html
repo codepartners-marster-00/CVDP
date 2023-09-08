@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta property="og:title" content="">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="article">
+        <title>Depot | CODEPAR | CPCS</title>
+        <link href="../res_/css/app.css" rel="stylesheet">
+        <script src="../res_/js/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+
+
+        <!-- contents START -->
+        <div class="wrap">
+            <div class="container CPcont">
+                <header><h1>CODEPARTNERS Depot.</h1></header>
+                <main>
+                    <aside>
+                        <div class="Q_A">
+                            <section>
+                                <dl>
+                                    <dt>Q1 . 
+                                        <p>아래 제이쿼리를 순수 스크립트로 변환하여 선언하시오.</p>
+                                        <p> ──────────────────────── </p>
+                                        <code><pre>$(document).ready();</pre></code>
+                                        <p> ──────────────────────── </p>
+                                    </dt>
+                                    <dd>ES6 기준으로 새로운 돔이벤트 추가, document.addEventListener('DOMContentLoaded', () =>{})</dd>
+                                    <dd>document.addEventListener('DOMContentLoaded', function(){});</dd>
+                                    <dd>document.addEventListener('DOMContentLoaded', function(){});</dd>
+                                    <dd>document.addEventListener("DOMContentLoaded", function(){}</dd>
+                                    
+                                </dl>
+                            </section>
+                            <section>
+                                <dl>
+                                    <dt>Q2 .
+                                        <p><code><pre>null</pre></code>과 <code><pre>undefined</pre></code>의 차이점을 설명하시오.</p>
+                                        
+                                    </dt>
+                                    <dd>null은 의도적으로 비어있는 경우에 해당함.</dd>
+                                    <dd>null은 어떤 목적에 따라 없음을 의도적으로 표현한 것이고, undefined는 변수가 scope에 등록되 값이 할당되지 않은 상태(초기값)일 때이다.</dd>
+                                    <dd>undefined - 변수나 객체에 값이 없음을 나타냄 <br>
+                                        null - 사용자가 의도적으로 값이 없도록 설정</dd>
+                                    <dd>null - 값이 의도적으로 비어있음 <br>
+                                        undefined - 값이 지정되지 않은 변수, 함수가 값을 return하지 않음</dd>
+                                </dl>
+                            </section>
+                            <section>
+                                <dl>
+                                    <dt>Q3 .
+                                        <p>버블링을 해결하기 위한 방법을 한 가지 이상 설명하시오.</p>
+                                        <code><pre></pre></code>
+                                    </dt>
+                                    <dd>event.stopPropagation();혹은 capture</dd>
+                                    <dd>1.기본적으로 갖고 있는 이벤트를 막는 방법(event.preventDefault();)<br>
+                                        2.전체적으로 다른 이벤트 전달 막기(return false;)<br>
+                                        3.부모에게 전달되는 것 막기(stopPropagation();)</dd>
+                                    <dd>stopPropagation()을 활용</dd>
+                                    <dd>
+                                        event.stopPropagation()를 사용하여 버블링 막기
+                                        <code><pre>
+        &lt;div onclick="alert(`버블링 보호막.`)"&gt;
+          &lt;button onclick="event.stopPropagation()"&gt;클릭&lt;/button&gt;
+        &lt;/div&gt;
+        </pre></code>
+                                    </dd>
+                                </dl>
+                            </section>
+                            <section>
+                                <dl>
+                                    <dt>Q4 .
+                                        <p><code><pre>return</pre></code>을 이용하여 함수를 중단하는 예시 코드를 간단하게 작성하시오.</p>
+                                        <code><pre></pre></code>
+                                    </dt>
+                                    <dd>
+                                        <code><pre>
+        function stop (bool){ if (!bool) return }
+                                        </pre></code>
+                                    </dd>
+                                    <dd>
+                                        <code><pre>
+        function sizeRect(w, h){
+        if(w > 0 && h > 0){
+        return w * h;
+        }
+        return 0;
+        }
+        console.log(sizeRect(2, 9));
+        console.log(sizeRect(2, -4));
+                                        </pre></code>
+                                    </dd>
+                                    <dd>
+                                        <code><pre>
+        function countReturn(){
+        for(let i=0;i<10;i++){
+        console.log(i)
+        if(i === 6){
+        return
+        }
+        }
+        }
+        countReturn()
+                                        </pre></code>
+                                    </dd>
+                                    <dd>
+                                        <code><pre>
+        function getRectArea(width, height){
+        if(width > 0 && height > 0){
+        return width * height;
+        }
+        return 0;
+        }
+                                        </pre></code>
+                                    </dd>
+                                </dl>
+                            </section>
+                        </div>
+                    <article>
+                        <div class="info"><p><strong>😲⚠ PC 웹 브라우저로 확인하는 것이 정확합니다</strong></p></div>
+                        <section id="cpcs-pagecall"></section>
+                    </article>
+                </main>
+                <hr>
+                
+
+                <footer>codepartners. 2023</footer>
+            </div>
+        </div>
+
+        <!-- // contents END -->
+
+
+
+
+        <script>function CALL(_url){$.ajax({type:'get',url:_url,success:function(data){$('#cpcs-pagecall').html(data);},error:function(){$('#cpcs-pagecall').text('waiting to write!');}});}</script></body>
+</html>
