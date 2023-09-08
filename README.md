@@ -14,9 +14,9 @@ __2023.09시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다__
 <br>
 
 ## 출제 미션
-##### ㆍ스크롤 이벤트를 제어해보세요 [ex-Scroll](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-S2-JS/quest01/Quest01.html)
-##### ㆍ탭 기능을 활성화 해보세요 [ex-Tab](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-S1-JS/quest02/Quest02.html)
-##### ㆍGNB에 2depth를 노출해보세요 [ex-GNB](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-S1-JS/quest01/Quest01.html)
+##### ㆍ스크롤 이벤트를 제어해보세요 [ex-Scroll](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01.html)
+##### ㆍ탭 기능을 활성화 해보세요 [ex-Tab](https://codepartners-marster-00.github.io/CVDP/CPCS23-S1-JS/quest02/Quest02.html)
+##### ㆍGNB에 2depth를 노출해보세요 [ex-GNB](https://codepartners-marster-00.github.io/CVDP/CPCS23-S1-JS/quest01/Quest01.html)
 ##### ㆍ실무에서 작성한 코드를 등록해보세요
 ##### ㆍ코드 오류를 발견하고 해결한 적 있나요? 공유해주세요!
 
