@@ -36,21 +36,21 @@ __2023.09시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다__
 ## 지난 시즌
 #### CPCS-23S2
 > __2023.05-2023.08__ <br>
-> ✔ [미션3번 클리어-1](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-S2-JS/quest01/Quest01_scroll.html) <br>
+> ✔ [미션3번 클리어-1](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01_scroll.html) <br>
 >  스크롤 헤더 고정 + 스크롤시 섹션마다 탭이동 + 우측 플로팅 메뉴 고정 <br>
 > <br>
-> ✔ [미션3번 클리어-2](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-S2-JS/quest01/Quest01_yong.html) <br>
+> ✔ [미션3번 클리어-2](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01_yong.html) <br>
 >  스크롤헤더 고정 + 스타일 변경 + 스크롤시 섹션마다 탭이동 + 우측 플로팅 메뉴 고정 <br>
 > <br>
-> ✔ [실무예제](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-result/code08/index.html) <br>
+> ✔ [실무예제](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code08/index.html) <br>
 >  네비게이션 UI , map 객체의 활용  <br>
 
 #### CPCS-23S1
 > __2023.01-2023.04__ <br>
-> ✔ [GNB미션 클리어](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-S1-JS/quest01/quest01-제출.html) <br>
+> ✔ [GNB미션 클리어](https://codepartners-marster-00.github.io/CVDP/CPCS23-S1-JS/quest01/quest01-제출.html) <br>
 >  GNB 1depth에 over 시, 2depth 전체 노출 / 2depth에 over 시 해당 1depth도 표시 <br>
 > <br>
-> ✔ [Tab미션 클리어](https://codepartners-marster-00.github.io/CPCS-JS/CPCS23-S1-JS/quest02/quest02-제출.html) <br>
+> ✔ [Tab미션 클리어](https://codepartners-marster-00.github.io/CVDP/CPCS23-S1-JS/quest02/quest02-제출.html) <br>
 >  tab menu를 클릭하면 같은 index[]를 가진 컨텐츠에 active되는 형태 <br>
 >  a태그를 button으로 교정하고 url에 #아이디가 노출되지 않게 보완하면 어떨까? <br>
 > <br>
@@ -58,7 +58,7 @@ __2023.09시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다__
 #### __CPCS-22S0__
 > __Beta.__ <br>
 > __2022.09-2022.12__ <br>
-> - [x] 질의응답 문제풀이 [응답보기](https://codepartners-marster-00.github.io/CPCS-JS/CPCS22-S0-Beta/index.html) <br>
+> - [x] 질의응답 문제풀이 [응답보기](https://codepartners-marster-00.github.io/CVDP/CPCS22-S0-Beta/index.html) <br>
 
 
 <br>
