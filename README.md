@@ -26,9 +26,9 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 #### CVDP-S3
 > __2023.09 ~ 2023.11__
 > - [ GNB ] <br> 
-> 👉 [by의 미션 클리어 ](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest01_GNB/Quest_GNB_by.html) <br>
-> 👉 [hr의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest01_GNB/Quest_GNB_hr.html) <br>
-> 👉 [joe의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest01_GNB/Quest_GNB_joe.html) <br>
+> 👉 [by의 미션 클리어 ](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_by.html) <br>
+> 👉 [hr의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_hr.html) <br>
+> 👉 [joe의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_joe.html) <br>
 >   <br>
 > - [ Tab ] <br>
 > 👉 [hr의 tab은 이렇게!~](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest03_TAB/Quest_SCROLL_hr.html) <br>
