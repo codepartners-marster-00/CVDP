@@ -25,11 +25,19 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 ## 진행중인 시즌
 #### CVDP-S3
 > __2023.09 ~ 2023.11__
-> - [ ] 미션 수행중 
->  ...ing
+> - [ GNB ] <br> 
+> ✔ [by의 미션 클리어 ](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest01_GNB/Quest_GNB_by.html) <br>
+> ✔ [hr의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest01_GNB/Quest_GNB_hr.html) <br>
+> ✔ [joe의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest01_GNB/Quest_GNB_joe.html) <br>
 >   <br>
-> - [ ] 실무 예제 공유중
->  ...ing
+> - [ Tab ] <br>
+> ✔ [hr의 tab은 이렇게!~](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest03_TAB/Quest_SCROLL_hr.html) <br>
+> ✔ [joe의 tab은 저렇게!~](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest03_TAB/Quest_SCROLL_joe.html) <br>
+>   <br>
+> - [ scroll ] <br>
+> ✔ [by의 강화버전](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest02_SCROLL/Quest_TAB_by.html) <br>
+> ✔ [hr의 미션 클리어](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest02_SCROLL/Quest_TAB_hr.html) <br>
+> ✔ [joe의 미션 클리어](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest02_SCROLL/Quest_TAB_joe.html) <br>
 
 <br>
 
@@ -100,6 +108,7 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 <table>
   <thead><tr><td>일자</td><td>내용</td><td>작성자</td></tr></thead>
   <tbody>
+    <tr><td>2023-11-22</td><td>23-S3 컨텐츠 아카이브 추가 </td><td>윤성미</td></tr>
     <tr><td>2023-09-06</td><td>미션 링크 변경, 컨텐츠 수정</td><td>윤성미</td></tr>
     <tr><td>2023-09-06</td><td>시즌 링크 추가</td><td>윤성미</td></tr>
     <tr><td>2023-09-05</td><td>생성, 문서 문단 정의</td><td>윤성미</td></tr>
