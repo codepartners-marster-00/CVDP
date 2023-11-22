@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Quest-TAB | CVDP | CODEPARTNERS</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<style>
+.Quest02 {margin: 4rem;}
+.Quest02 #tabs {list-style-type: none;}
+.Quest02 #tabs li {display: inline-block;margin-bottom: -1px;}
+.Quest02 #tabs li a {display: block;height: 100%;padding: 20px;border-radius: 4px 4px 0 0;border: 1px solid;border-color: #eeeeee #eeeeee transparent;text-align: center; cursor:pointer;}
+.Quest02 #tabs li:hover a, .Quest02 #tabs li a.active {background-color: #efefef;}
+.Quest02 #tab-contents {border: 1px solid #eeeeee; background-color: #efefef;}
+.Quest02 #tab-contents .tab-contents {padding: 20px;display: none;}
+.Quest02 #tab-contents .tab-contents.active {display: block;}
+</style>
+</head>
+<body>
+	<header id="header"><h1>Quest02 | TAB | CVDP | CODEPARTNERS</h1></header>
+
+	<!--  container -->
+	<div id="container" class="container Quest02">
+		<div class="wrap">			
+			<ul id="tabs" class="tabs_title">
+				<li><a class="active" data-tab="#tab1">Tab 1</a></li>
+				<li><a data-tab="#tab2">Tab 2</a></li>
+				<li><a data-tab="#tab3">Tab 3</a></li>
+			</ul>
+			
+			<div id="tab-contents">
+				<div id="tab1" class="tab-contents active">
+					<p>tab 1</p>
+				</div>
+				<div id="tab2" class="tab-contents">
+					<p>tab 2</p>
+				</div>
+				<div id="tab3" class="tab-contents">
+					<p>tab 3</p>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- // container -->
+	<footer id="footer"></footer>
+	<script>
+		
+		const tabNav = document.querySelector('.tabs_title');
+		const tabTitle = document.querySelectorAll('.tabs_title li a');
+		const tabItem = document.querySelectorAll('.tab-contents');
+
+		//tabNav = tabs_title클릭시 이벤트 발생
+		tabNav.addEventListener('click', function(e){
+			//button 클릭 시 가장 가까운 tabs_title li a 소환
+			const targetTab = e.target.closest('.tabs_title li a');
+
+			if(targetTab){
+				//data-tab값 가져옴
+				const tabId = targetTab.getAttribute('data-tab');
+				const currentTab = document.querySelector(tabId);
+				//tabs_title li a 클릭시 active 클래스 생성
+				tabTitle.forEach(Title => Title.classList.toggle('active' , Title === targetTab));
+				//tabs_title li a 와 연결된 data-tab의 tab-contents에 active 클래스 생성
+				tabItem.forEach((item) => {
+					item.classList.remove('active');
+					if(item === currentTab){
+						item.classList.add('active');
+					}
+				});
+			}
+		});
+	</script>
+</body>
+
+</html>
+
+
