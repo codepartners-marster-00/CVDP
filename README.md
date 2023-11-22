@@ -40,7 +40,7 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 > 👉 [joe의 미션 클리어](https://codepartners-marster-00.github.io/CVDP/CPCS23-S3-JS/quest02_SCROLL/Quest_TAB_joe.html) <br>
 >   <br>
 > - [ scroll ] <br>
-> 👉 [실무예제 ](https://codepartners-marster-00.github.io/CVDP/C0PCS23-result/code08/index.html) <br>
+> 👉 [실무예제](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code08/index.html) <br>
 
 <br>
 
