@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*util*/
+body {
+  background-color: #444;
+}
+
+* {
+  font-size: 14px;
+}
+
+.wrap {
+  background-color: #fff;
+  max-width: 70%;
+  padding: 80px;
+  margin: 0 auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.form-cont {
+  position: relative;
+}
+.form-cont select {
+  display: none;
+}
+
+/*dropdown*/
+.form-drop-box {
+  position: relative;
+  width: 327px;
+  /*dropdown btn*/
+  /*list*/
+}
+.form-drop-box button {
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+  height: 36px;
+  width: 100%;
+}
+.form-drop-box button[class^=btn-drop-] {
+  padding-right: 32px;
+}
+.form-drop-box button[class^=btn-drop-]::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat center;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cg fill='none'%3E%3Cpath stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' d='m3 5.5 5 5 5-5' data-name='back'/%3E%3Cpath d='M16 0v16H0V0z' data-name='사각형 6370' opacity='.2'/%3E%3C/g%3E%3C/svg%3E");
+  transition: 0.3s ease;
+}
+.form-drop-box button[class^=btn-drop-].open::before {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.form-drop-box button > span {
+  color: #ddd;
+  pointer-events: none;
+}
+.form-drop-box button > span.required::before {
+  content: "*";
+  display: inline-block;
+  padding-right: 2px;
+  color: orange;
+}
+.form-drop-box button.btn-drop-box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.form-drop-box button.btn-drop-box::before {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.form-drop-box button.btn-drop-box + ul.drop-list li a.active {
+  padding-right: 32px;
+  background: green;
+  background-color: #fafafa;
+  background-size: 20px auto;
+}
+.form-drop-box button.btn-drop-line {
+  border-bottom: 1px solid #aaa;
+}
+.form-drop-box ul.drop-list {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.0156862745);
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  top: 48px;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  display: none;
+  overflow: auto;
+}
+.form-drop-box ul.drop-list li a {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+.form-drop-box ul.drop-list li a:hover {
+  background-color: #fafafa;
+}
+.form-drop-box ul.drop-list li button {
+  padding-left: 40px;
+}
+.form-drop-box ul.drop-list li button::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transition: 0.3s ease;
+}
+.form-drop-box ul.drop-list li button.active {
+  background-color: #fafafa;
+  color: #ddd;
+}
+.form-drop-box ul.drop-list li button.active::before {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.form-drop-box ul.drop-list li button:hover {
+  background-color: #fafafa;
+}
+.form-drop-box ul.drop-list li button.open {
+  background-color: #fafafa;
+}
+.form-drop-box ul.drop-list li button.open::before {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.form-drop-box ul.drop-list li ul {
+  display: none;
+}

@@ -1,0 +1,130 @@
+@import url(./reset.css);
+.dot {
+  position: relative;
+  padding-left: 10px;
+}
+.dot::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #222;
+  left: 0;
+  top: 7px;
+}
+
+.main_section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main_section dl.info > div {
+  display: flex;
+  font-size: 17px;
+}
+.main_section dl.info > div + div {
+  margin-top: 10px;
+}
+.main_section dl.info > div > dt {
+  width: 110px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+.main_section h1 {
+  font-size: 40px;
+}
+
+.section_wrap .section_nav {
+  position: sticky;
+  top: 60px;
+  display: inline-flex;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px;
+  border-radius: 50px;
+}
+.section_wrap .section_nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 40px;
+  color: #fff;
+  border-radius: inherit;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.section_wrap .section_nav a.active {
+  color: #222;
+}
+.section_wrap .section_nav span.active_bg {
+  transition: 0.3s;
+  position: absolute;
+  display: block;
+  border-radius: inherit;
+  background-color: #fff;
+  z-index: -1;
+  height: 100%;
+  width: 76px;
+}
+.section_wrap .section_nav::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #222;
+  padding: 10px;
+}
+.section_wrap section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.section_wrap section:nth-of-type(1) {
+  margin-top: 60px;
+}
+.section_wrap section#sec01 {
+  background-color: #7286D3;
+  color: #FFF2F2;
+}
+.section_wrap section#sec02 {
+  background-color: #8EA7E9;
+  color: #E5E0FF;
+}
+.section_wrap section#sec03 {
+  background-color: #E5E0FF;
+  color: #7286D3;
+}
+.section_wrap section#sec04 {
+  background-color: #FFF2F2;
+  color: #8EA7E9;
+}
+.section_wrap section#sec05 {
+  background-color: #7286D2;
+  color: #FFF2F4;
+}
+
+footer {
+  height: 350px;
+  background-color: #222;
+  padding-top: 50px;
+}
+footer .txt-opa {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  opacity: 0.3;
+  text-transform: uppercase;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--동적으로 생성되는 리스트 구조-->
+    <!-- <div class="form-drop-box">
+        <button type="button" class="btn-drop-box" data-event="dropdown">전체</button>
+        <ul class="drop-list">
+            <li class="active"><a href="#">list01</a></li>
+            <li><a href="#">list02</a></li>
+            <li><a href="#">list03</a></li>
+            <li><a href="#">list04</a></li>
+        </ul>
+    </div> -->
+
+    <div class="wrap">
+        <b>nomal</b>
+        <div class="form-cont">
+            <select class="btn-drop-box">
+                <option value="item1">item1</option>
+                <option value="item2">item2</option>
+                <option value="item3">item3</option>
+                <option value="item4" selected>item4</option>
+                <option value="item5">item5</option>
+            </select>
+        </div>
+        <div class="form-cont">
+            <select class="btn-drop-line">
+                <option value="item1">item1</option>
+                <option value="item2" selected>item2</option>
+                <option value="item3">item3</option>
+                <option value="item4">item4</option>
+                <option value="item5">item5</option>
+            </select>
+        </div>
+
+        <b>required</b>
+        <div class="form-cont">
+            <select class="btn-drop-box">
+                <option value="item1" hidden>item1</option>
+                <option value="item2">item2</option>
+                <option value="item3">item3</option>
+                <option value="item4">item4</option>
+                <option value="item5">item5</option>
+            </select>
+        </div>
+        <div class="form-cont">
+            <select class="btn-drop-line" required>
+                <option value="line1" hidden>item1</option>
+                <option value="line2">item2</option>
+                <option value="line3">item3</option>
+                <option value="line4">item4</option>
+                <option value="line5">item5</option>
+            </select>
+        </div>
+
+        <b>ul > li default</b>
+        <div class="form-drop-box">
+            <button type="button" class="btn-drop-box" data-event="dropdown">list01</button>
+            <ul class="drop-list">
+                <li class="active"><a href="#">list01</a></li>
+                <li><a href="#">list02</a></li>
+                <li><a href="#">list03</a></li>
+                <li><a href="#">list04</a></li>
+            </ul>
+        </div>
+        <div class="form-drop-box">
+            <button type="button" class="btn-drop-line" data-event="dropdown">list01</button>
+            <ul class="drop-list">
+                <li class="active"><a href="#">list01</a></li>
+                <li><a href="#">list02</a></li>
+                <li><a href="#">list03</a></li>
+                <li><a href="#">list04</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
