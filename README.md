@@ -29,7 +29,7 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 > 👉 [by의 미션 클리어 ](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_by.html) <br>
 > 👉 [hr의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_hr.html) <br>
 > 👉 [joe의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_joe.html) <br>
-> 👉 [tm의 미션 클리어 ](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_tm.html) <br>
+> 👉 [tm의 미션 클리어 ](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest-GNB_tm.html) <br>
 >   <br>
 > - [ Tab ] <br>
 > 👉 [by의 강화버전](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest03_TAB/Quest_TAB_by.html) <br>
