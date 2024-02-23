@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-wrap">
+        header
+    </header>
+    <main id="container">
+        <section class="membership-benefit">
+            <div class="benefit-wrap">
+                <div class="inner">
+                    <div class="cmn-content-head">
+                        <h1>타이틀</h1>
+                        <p class="exp">추가 설명</p>
+                    </div>
+                    <div class="benefit-item-wrap">
+                        <div class="benefit-item">
+                            카드1
+                        </div>
+                        <div class="benefit-item">
+                            카드2
+                        </div>
+                        <div class="benefit-item">
+                            카드3
+                        </div>
+                        <div class="benefit-item">
+                            카드4
+                        </div>
+                        <div class="benefit-item">
+                            카드5
+                        </div>
+                        <div class="benefit-item">
+                            카드6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer-wrap">
+        footer
+    </footer>
+    
+    <script>
+        //card motion
+        function cardEvent () {
+            const header = document.getElementById('header-wrap')
+            const benefitWrap = document.querySelector('.membership-benefit')
+            const fixedWrap = document.querySelector('.benefit-wrap')
+            const cards = document.querySelectorAll('.benefit-item')
+            const cardWrap = document.querySelector('.benefit-item-wrap')
+
+            let wrapRect
+            let winY
+            let viewportY
+            let wrapTop
+            let fullHeight
+            let point
+            let triggerPoints = []
+            let lastIdx = -1
+
+            function setProperty() {
+                wrapRect = benefitWrap.getBoundingClientRect()
+                winY = window.scrollY
+                viewportY = winY + window.innerHeight
+                wrapTop = wrapRect.top + winY;
+                fullHeight = wrapTop + (wrapRect.height - (wrapRect.height * 0.14)) //안전 영역을 위해 (wrapRect.height * 0.14) 만큼 제외 
+                point = fullHeight / (cards.length * 1.2)
+
+                // for (let i = 0; i < cards.length; i++) {
+                //     triggerPoints[i] = Math.floor(wrapTop + (point * i))
+                // }
+                triggerPoints = [...cards].map((_, i) => Math.floor(wrapTop + (point * i))) 
+                //[...cards] = mpa 사용을 위해 NodeList로 배열 사용
+                //.map(el,index) > el 사용X _로 표시
+                //Math.floor = 내림값
+                
+            }
+
+            //클래스명 부여를 위한 함수
+            function setClass(idx) {
+                let classNameToRemove = Array.from(cardWrap.classList).find(className => className.includes('card-'))
+                if (classNameToRemove) {
+                    cardWrap.classList.remove(classNameToRemove)
+                }
+                cardWrap.classList.add(`card-${idx+1}-active`)
+            }
+
+            //winY 에 맞게 카드 액션을 셋팅하는 함수
+            function setCards(winY) {
+                triggerPoints.forEach((trigger, idx) => {
+                    if (winY >= trigger && winY <= trigger + point) {
+                        if (lastIdx !== idx) {
+                            setClass(idx)
+                            lastIdx = idx
+                        }
+                    }
+                })
+            }
+
+            //fixed 영역을 위한 함수
+            function updateFixedWrap() {
+                if (wrapTop <= winY && wrapTop + wrapRect.height >= viewportY) {
+                    fixedWrap.style.position = 'fixed'
+                    fixedWrap.style.top = `0px`
+                    setCards(winY)
+                }else if (wrapTop + wrapRect.height <= viewportY) {
+                    fixedWrap.style.position = 'absolute'
+                    fixedWrap.style.bottom = '0px'
+                    fixedWrap.style.top = 'unset'
+                    setClass(5)
+                } else {
+                    fixedWrap.style.position = 'absolute'
+                    fixedWrap.style.bottom = 'unset'
+                    fixedWrap.style.top = '0px'
+                }
+            }
+
+            function initEvent() {
+                setProperty()
+                setCards(winY)
+                updateFixedWrap()
+            }
+
+            //스크롤 시 업데이트 되어야하는 값
+            window.addEventListener('scroll', () => {
+                winY = window.scrollY
+                viewportY = winY + window.innerHeight
+                updateFixedWrap()
+            })
+
+            window.addEventListener('resize', () => {
+                setProperty()
+            })
+
+            initEvent()
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                cardEvent()
+            }, 1);
+        })
+    </script>
+</body>
+</html>

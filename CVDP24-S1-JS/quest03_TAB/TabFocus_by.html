@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포커스 이동</title>
+
+    <style>
+        /* 공통 */
+        * {
+            box-sizing: border-box;
+        }
+
+        div,
+        h2,
+        form,
+        label,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        button {
+            display: block;
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            ;
+        }
+
+        /* 세부 */
+        .city-wrap {
+            margin: 100px auto 0;
+        }
+
+        .city-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-top: 1px solid #e0e0e0;
+            border-left: 1px solid #e0e0e0;
+        }
+
+        .city-list li {
+            border-right: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .city-list li button {
+            width: 100%;
+            padding: 15px 0;
+        }
+
+        .city-list li button[title='선택됨'] {
+            color: tomato;
+        }
+
+        .city-select {
+            display: none;
+            margin-top: 30px;
+            ;
+        }
+
+        .city-select[data-open='open'] {
+            display: block;
+        }
+
+        .city-select h2 {
+            padding-bottom: 12px;
+            text-align: center;
+        }
+
+        .city-select form {
+            padding: 15px;
+            background: #f8f8f8;
+        }
+
+        .city-select form label {
+            position: absolute;
+            left: -1px;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .city-select form select {
+            width: 100%;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 100px;
+            font-size: 18px;
+        }
+
+        .city-select form button {
+            width: 100%;
+            margin: 15px auto 0;
+            padding: 10px;
+            border-radius: 100px;
+            background: #059fa9;
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer {
+            width: calc(100% - 10px);
+            height: 20px;
+            margin: 50px auto 0;
+            background: #e1e1e1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city">
+        <div class="city-wrap">
+            <ul class="city-list">
+                <li><button type="button" data-city="seoul">서울</button></li>
+                <li><button type="button" data-city="busan">부산</button></li>
+                <li><button type="button" data-city="daegu">대구</button></li>
+                <li><button type="button" data-city="incheon">인천</button></li>
+                <li><button type="button" data-city="kwangju">광주</button></li>
+                <li><button type="button" data-city="daejeon">대전</button></li>
+            </ul>
+            <div class="city-select">
+                <h2>도시명</h2>
+                <form>
+                    <label for="selectBox">시군구 선택하기</label>
+                    <select name="selectBox" id="selectBox">
+                        <option value="시군구">시군구</option>
+                    </select>
+                    <button type="button">확인</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer tabindex="0"></footer>
+
+    <script>
+        let cityTitle = {
+            seoul: '서울특별시',
+            busan: '부산광역시',
+            daegu: '대구광역시',
+            incheon: '인천광역시',
+            kwangju: '광주광역시',
+            daejeon: '대전광역시',
+        };
+        let selectOption = {
+            seoul: '<option value="전체">전체</option><option value="종로구">종로구</option><option value="중구">중구</option><option value="용산구">용산구</option><option value="성동구">성동구</option><option value="광진구">광진구</option>',
+            busan: '<option value="전체">전체</option><option value="중구">중구</option><option value="서구">서구</option><option value="동구">동구</option><option value="영도구">영도구</option><option value="부산진구">부산진구</option>',
+            daegu: '<option value="전체">전체</option><option value="중구">중구</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option>',
+            incheon: '<option value="전체">전체</option><option value="중구">중구</option><option value="동구">동구</option><option value="미추홀구">미추홀구</option><option value="연수구">연수구</option><option value="남동구">남동구</option>',
+            kwangju: '<option value="전체">전체</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="중구">중구</option>',
+            daejeon: '<option value="전체">전체</option><option value="동구">동구</option><option value="중구">중구</option><option value="서구">서구</option><option value="유성구">유성구</option>',
+        };
+        const citySelect = document.querySelector('.city-select');
+        const btnCities = document.querySelectorAll('.city-list button[data-city]');
+
+        btnCities.forEach((btnCity, index) => {
+            btnCity.addEventListener('click', () => {
+                changeTitle(btnCities, btnCity);
+                citySelect.setAttribute('data-open', 'open');
+                // city-select의 h2 내용 변경
+                for (let title in cityTitle) {
+                    if (btnCity.getAttribute('data-city') == title) {
+                        citySelect.querySelector('h2').innerHTML = cityTitle[title];
+                        // 접근성 측면에서 label 내용 변경
+                        citySelect.querySelector('label').innerHTML = cityTitle[title] + ' 시군구 선택하기';
+                    }
+                }
+                // city-select의 option 값 변경
+                for (let option in selectOption) {
+                    if (btnCity.getAttribute('data-city') == option) {
+                        citySelect.querySelector('#selectBox').innerHTML = selectOption[option];
+                    }
+                }
+                // 원할한 포커스 이동을 위해 setTimeout 설정
+                setTimeout(() => {
+                    citySelect.querySelector('#selectBox').focus();
+                }, 1);
+            })
+
+            btnCity.addEventListener('keydown', (e) => {
+                if (!e.shiftKey && e.key == 'Tab') {
+                    if (btnCities.length == index + 1) {
+                        e.preventDefault();
+                        document.querySelector('footer').focus();
+                    }
+                }
+            })
+        })
+
+        citySelect.querySelector('#selectBox').addEventListener('keydown', (e) => {
+            if (e.shiftKey && e.key == 'Tab') {
+                e.preventDefault();
+                document.querySelector('.city-list button[title="선택됨"]').focus();
+            }
+        })
+
+        function changeTitle(remove, add) {
+            remove.forEach(el => {
+                el.setAttribute('title', '');
+            });
+            add.setAttribute('title', '선택됨');
+        }
+    </script>
+
+</body>
+
+</html>

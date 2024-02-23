@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersection Observer API</title>
+</head>
+<body>
+    <style>
+        body {margin: 0; padding: 0;}
+        header {height: 300px; background-color: skyblue; padding-top: 20px; box-sizing: border-box;}
+        header h1 {font-size: 36px; text-align: center; color: #fff; margin:0;}
+        header p {font-size: 24px; text-align: center; color: #fff;}
+        .main {width: 900px; margin: 0 auto;}
+        .main section {padding: 20px 0; margin-bottom: 20px; transform: translateY(20px); opacity: 0; transition: all .5s ease-in-out;}
+        .main section.on {transform: translateY(0); opacity: 1;}
+        .main section:first-child {background-color: antiquewhite;}
+        .main section:nth-child(2) {background-color: rgb(208, 162, 250);}
+        .main section:nth-child(3) {background-color: rgb(252, 219, 158);}
+        .main section:nth-child(4) {background-color: rgb(241, 154, 154)}
+        .main section:last-child {background-color: rgb(161, 161, 252); margin-bottom: 0;}
+    </style>
+    <header>
+        <h1>Intersection Observer API</h1>
+        <p>Intersection Observer API를 활용한 스크롤 이벤트</p>
+    </header>
+    <div class="main">
+        <section class="section on">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sol legam bella continens, referta dicit timeam confirmavit. Caret disserunt atilii locupletiorem spernat, ambigua mus. Delectamur nostro integer ultima aliquos pede. Incidunt vitium acuti monstret, astris. Causam iracundia cognitio tradit dissensio prosperum hostem tortor praeterierunt ipsis. Inopem videretur divina lineam molestum. Primorum ponderum consecutus tranquillae morati libero. Perdiderunt leo, elaboraret postulant graeci sensibus iisque fabulis verear explicatam occulte. Torquatum delectant concursio conveniunt, electis odioque hosti praeclare.
+            Hostem venustate pellat docere posteri efficiendi molestia o. Philosophorum saluti faciendumve redeamus cuius vetuit assumenda. Putarent adoptionem timorem medeam, suspendisse amicitiae. Multitudinem gravissimas pater litterae t doloribus naturales tristique litora iudicium. Iracundia bonas, patientiamque voluptatem declinare te, quorum inciderit concludaturque mei labores. Adhibuit partus, logikh animus utroque nullo. Notae habitasse metuque sustulisti dignissimos.
+            Aequitatem quod quocirca coniuncta fruitur appetere depulsa magistra homine. Provincia medium, vita idque motu fit. Arare plus comparandae, pericula cuiquam dicantur inter risus liberae factorum. Muniti his ratione arridens vivendum affert intus scriptum controversia disputata potenti. Atomus consectetuer recte modi intelleges scipio aliquos sin oportere dolor. Sibi adhibenda quandam accedit patrius aenean iisque credo copulatas.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sol legam bella continens, referta dicit timeam confirmavit. Caret disserunt atilii locupletiorem spernat, ambigua mus. Delectamur nostro integer ultima aliquos pede. Incidunt vitium acuti monstret, astris. Causam iracundia cognitio tradit dissensio prosperum hostem tortor praeterierunt ipsis. Inopem videretur divina lineam molestum. Primorum ponderum consecutus tranquillae morati libero. Perdiderunt leo, elaboraret postulant graeci sensibus iisque fabulis verear explicatam occulte. Torquatum delectant concursio conveniunt, electis odioque hosti praeclare.
+            Hostem venustate pellat docere posteri efficiendi molestia o. Philosophorum saluti faciendumve redeamus cuius vetuit assumenda. Putarent adoptionem timorem medeam, suspendisse amicitiae. Multitudinem gravissimas pater litterae t doloribus naturales tristique litora iudicium. Iracundia bonas, patientiamque voluptatem declinare te, quorum inciderit concludaturque mei labores. Adhibuit partus, logikh animus utroque nullo. Notae habitasse metuque sustulisti dignissimos.
+            Aequitatem quod quocirca coniuncta fruitur appetere depulsa magistra homine. Provincia medium, vita idque motu fit. Arare plus comparandae, pericula cuiquam dicantur inter risus liberae factorum. Muniti his ratione arridens vivendum affert intus scriptum controversia disputata potenti. Atomus consectetuer recte modi intelleges scipio aliquos sin oportere dolor. Sibi adhibenda quandam accedit patrius aenean iisque credo copulatas.
+        </section>
+        <section class="section">
+            처벌인 보내면, 아직 때문 새롭아, 잘 보이고 이의 있지요. 정비하다 이념이 작가가 밑과 없에요. 하여서 예에 놓다 야 남방이 같는 날씨의 자산의 않으나 없다. 작렬시킨 등등 전개한, 그다음이 녀석 특별히 감사가 개사 익다. 되기 취재하지 어두컴컴하던 지나다 한 지방이다 거의 사는 앞이나 씨 보네. 완치를 개장 참조가 장면이거나, 우려처럼 그 무모하기 그 데, 거, 반영하다. 전 나라로 개인과 관리는 하고 그렇다니. 유월과 화석을 이 말은 사회적 하는 신설하다 거 지적할래.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sol legam bella continens, referta dicit timeam confirmavit. Caret disserunt atilii locupletiorem spernat, ambigua mus. Delectamur nostro integer ultima aliquos pede. Incidunt vitium acuti monstret, astris. Causam iracundia cognitio tradit dissensio prosperum hostem tortor praeterierunt ipsis. Inopem videretur divina lineam molestum. Primorum ponderum consecutus tranquillae morati libero. Perdiderunt leo, elaboraret postulant graeci sensibus iisque fabulis verear explicatam occulte. Torquatum delectant concursio conveniunt, electis odioque hosti praeclare.
+            Hostem venustate pellat docere posteri efficiendi molestia o. Philosophorum saluti faciendumve redeamus cuius vetuit assumenda. Putarent adoptionem timorem medeam, suspendisse amicitiae. Multitudinem gravissimas pater litterae t doloribus naturales tristique litora iudicium. Iracundia bonas, patientiamque voluptatem declinare te, quorum inciderit concludaturque mei labores. Adhibuit partus, logikh animus utroque nullo. Notae habitasse metuque sustulisti dignissimos.
+            Aequitatem quod quocirca coniuncta fruitur appetere depulsa magistra homine. Provincia medium, vita idque motu fit. Arare plus comparandae, pericula cuiquam dicantur inter risus liberae factorum. Muniti his ratione arridens vivendum affert intus scriptum controversia disputata potenti. Atomus consectetuer recte modi intelleges scipio aliquos sin oportere dolor. Sibi adhibenda quandam accedit patrius aenean iisque credo copulatas.
+            처벌인 보내면, 아직 때문 새롭아, 잘 보이고 이의 있지요. 정비하다 이념이 작가가 밑과 없에요. 하여서 예에 놓다 야 남방이 같는 날씨의 자산의 않으나 없다. 작렬시킨 등등 전개한, 그다음이 녀석 특별히 감사가 개사 익다. 되기 취재하지 어두컴컴하던 지나다 한 지방이다 거의 사는 앞이나 씨 보네. 완치를 개장 참조가 장면이거나, 우려처럼 그 무모하기 그 데, 거, 반영하다. 전 나라로 개인과 관리는 하고 그렇다니. 유월과 화석을 이 말은 사회적 하는 신설하다 거 지적할래.
+        </section>
+        <section class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eruditionem adhibuit has potitur discere difficilius, cupiditates detractis videbitur innumerabiles. Vivendi sane sublata sibi bestiae albucius hinc, eius plerumque constituamus. Cruciantur maximisque delectet duxit expetitur tibique iniucundus monstret. Torquatus corpora corporisque horreat aperiam manum. Morborum prorsus utramque reprehensione nullo utriusque tollitur. Inciderint transferam utramque, inprobitas beatam bono desideraret praeter recordamur stoicos temperantiam. Interdum stabilitas potione persequeretur legendos petulantes turbulenta gloriatur. Alteram homero rhoncus, placebit beatae probarent videmus. Variis inpendente dignitatis urna quos iucunditate optimi persecuti.
+            Negant varius agam risus illaberetur similique inanitate torquatis volunt omnibus modi. Iuvaret malum bono, fidem inanes. Novum diligi molestiam sale umquam cotidieque magnosque zenonem amatoriis horum. Impedit expectat ei modus discordiae cetero. Efficeretur defendit veritus sapientia gravioribus adoptionem donec voluptas. Mucius nonne hac mandamus compositis, romanum, ingeniis tantis. Voluerint aliam placatae, difficilem soleat.
+            회담과 제한에, 5,430,000원 나게 선거구의 학대가 대하다. 표와 꼭 증대시키고 6세 있어 정권은 알려지게 위원회에서 배역을 입을 있다. 그러나 상태를 있고 가아 모으면 극단적의 없은, 하다. 척 31일 밟고 따른 구월의 요통의 엘피 전문의의 연합의, 강의하다. 것 사설이라고 전무다 동안은 총회원이 쓰는, 공략하나. 2022년 없지 것 이 해결책의, 어떻든 항전의, 것 기술이, 믿다.
+            "것 치러지는 시간에서 불가피한 예산은 위기는 동안도 관리는 마신다" "이달과 없다 따라서 대하다 만큼 뽑히는 사이즈를 강조하다" 하는 기업이다, 다투는, 점에 탈락률으로, 공동도 국회의원이 마구, 제외하라. 단선적이고 사상을 스타팅이 자신도 주장하다 알려진다. 상영에 시민은 의도가 정부의 줄 한지. "처남을 프로를 확산될 사이는 주다" 92개 목숨의 계획은 이르다 배출에서 보급에서 장관을 버는 매각으로, 결정하다. 익숙해지는 여권의 미술에 현안에서 통제는 없은 평균은 또한, 사건은 응용하다.
+            수련이어 몰려드는, 있으면 지나는 불평등하다. 시각의 이가 이단의 10명 등 후보자까지 데친지. 중단할 항의하게, 기록에서 앞이 남의 후보에서 특히 결함에 거부는 계속되다. 업체가 붕괴가 처하여야 민주주의가 보내면 이런 대규모까지 의장에게 보험이 몸부림치다. 위의 원인은 토요일으로 대책은 공참은 정기나 지난다 파문이 있다. 접근한 믿을 않던 그해가 달할 이루어지다. 통상부터 9시간 사건도 봉지를 국민의 않아서 시간이 따르다.
+            회담과 제한에, 5,430,000원 나게 선거구의 학대가 대하다. 표와 꼭 증대시키고 6세 있어 정권은 알려지게 위원회에서 배역을 입을 있다. 그러나 상태를 있고 가아 모으면 극단적의 없은, 하다. 척 31일 밟고 따른 구월의 요통의 엘피 전문의의 연합의, 강의하다. 것 사설이라고 전무다 동안은 총회원이 쓰는, 공략하나. 2022년 없지 것 이 해결책의, 어떻든 항전의, 것 기술이, 믿다.
+            "것 치러지는 시간에서 불가피한 예산은 위기는 동안도 관리는 마신다" "이달과 없다 따라서 대하다 만큼 뽑히는 사이즈를 강조하다" 하는 기업이다, 다투는, 점에 탈락률으로, 공동도 국회의원이 마구, 제외하라. 단선적이고 사상을 스타팅이 자신도 주장하다 알려진다. 상영에 시민은 의도가 정부의 줄 한지. "처남을 프로를 확산될 사이는 주다" 92개 목숨의 계획은 이르다 배출에서 보급에서 장관을 버는 매각으로, 결정하다. 익숙해지는 여권의 미술에 현안에서 통제는 없은 평균은 또한, 사건은 응용하다.
+            수련이어 몰려드는, 있으면 지나는 불평등하다. 시각의 이가 이단의 10명 등 후보자까지 데친지. 중단할 항의하게, 기록에서 앞이 남의 후보에서 특히 결함에 거부는 계속되다. 업체가 붕괴가 처하여야 민주주의가 보내면 이런 대규모까지 의장에게 보험이 몸부림치다. 위의 원인은 토요일으로 대책은 공참은 정기나 지난다 파문이 있다. 접근한 믿을 않던 그해가 달할 이루어지다. 통상부터 9시간 사건도 봉지를 국민의 않아서 시간이 따르다.
+        </section>    
+        <section class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sol legam bella continens, referta dicit timeam confirmavit. Caret disserunt atilii locupletiorem spernat, ambigua mus. Delectamur nostro integer ultima aliquos pede. Incidunt vitium acuti monstret, astris. Causam iracundia cognitio tradit dissensio prosperum hostem tortor praeterierunt ipsis. Inopem videretur divina lineam molestum. Primorum ponderum consecutus tranquillae morati libero. Perdiderunt leo, elaboraret postulant graeci sensibus iisque fabulis verear explicatam occulte. Torquatum delectant concursio conveniunt, electis odioque hosti praeclare.
+            Hostem venustate pellat docere posteri efficiendi molestia o. Philosophorum saluti faciendumve redeamus cuius vetuit assumenda. Putarent adoptionem timorem medeam, suspendisse amicitiae. Multitudinem gravissimas pater litterae t doloribus naturales tristique litora iudicium. Iracundia bonas, patientiamque voluptatem declinare te, quorum inciderit concludaturque mei labores. Adhibuit partus, logikh animus utroque nullo. Notae habitasse metuque sustulisti dignissimos.
+            Aequitatem quod quocirca coniuncta fruitur appetere depulsa magistra homine.
+            회담과 제한에, 5,430,000원 나게 선거구의 학대가 대하다. 표와 꼭 증대시키고 6세 있어 정권은 알려지게 위원회에서 배역을 입을 있다. 그러나 상태를 있고 가아 모으면 극단적의 없은, 하다. 척 31일 밟고 따른 구월의 요통의 엘피 전문의의 연합의, 강의하다. 것 사설이라고 전무다 동안은 총회원이 쓰는, 공략하나. 2022년 없지 것 이 해결책의, 어떻든 항전의, 것 기술이, 믿다.
+            "것 치러지는 시간에서 불가피한 예산은 위기는 동안도 관리는 마신다" "이달과 없다 따라서 대하다 만큼 뽑히는 사이즈를 강조하다" 하는 기업이다, 다투는, 점에 탈락률으로, 공동도 국회의원이 마구, 제외하라. 단선적이고 사상을 스타팅이 자신도 주장하다 알려진다. 상영에 시민은 의도가 정부의 줄 한지. "처남을 프로를 확산될 사이는 주다" 92개 목숨의 계획은 이르다 배출에서 보급에서 장관을 버는 매각으로, 결정하다. 익숙해지는 여권의 미술에 현안에서 통제는 없은 평균은 또한, 사건은 응용하다.
+            수련이어 몰려드는, 있으면 지나는 불평등하다. 시각의 이가 이단의 10명 등 후보자까지 데친지. 중단할 항의하게, 기록에서 앞이 남의 후보에서 특히 결함에 거부는 계속되다. 업체가 붕괴가 처하여야 민주주의가 보내면 이런 대규모까지 의장에게 보험이 몸부림치다. 위의 원인은 토요일으로 대책은 공참은 정기나 지난다 파문이 있다. 접근한 믿을 않던 그해가 달할 이루어지다. 통상부터 9시간 사건도 봉지를 국민의 않아서 시간이 따르다.
+        </section>
+        <section class="section">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sol legam bella continens, referta dicit timeam confirmavit. Caret disserunt atilii locupletiorem spernat, ambigua mus. Delectamur nostro integer ultima aliquos pede. Incidunt vitium acuti monstret, astris. Causam iracundia cognitio tradit dissensio prosperum hostem tortor praeterierunt ipsis. Inopem videretur divina lineam molestum. Primorum ponderum consecutus tranquillae morati libero. Perdiderunt leo, elaboraret postulant graeci sensibus iisque fabulis verear explicatam occulte. Torquatum delectant concursio conveniunt, electis odioque hosti praeclare.
+            Hostem venustate pellat docere posteri efficiendi molestia o. Philosophorum saluti faciendumve redeamus cuius vetuit assumenda. Putarent adoptionem timorem medeam, suspendisse amicitiae. Multitudinem gravissimas pater litterae t doloribus naturales tristique litora iudicium. Iracundia bonas, patientiamque voluptatem declinare te, quorum inciderit concludaturque mei labores. Adhibuit partus, logikh animus utroque nullo. Notae habitasse metuque sustulisti dignissimos.
+            Aequitatem quod quocirca coniuncta fruitur appetere depulsa magistra homine.
+            회담과 제한에, 5,430,000원 나게 선거구의 학대가 대하다. 표와 꼭 증대시키고 6세 있어 정권은 알려지게 위원회에서 배역을 입을 있다. 그러나 상태를 있고 가아 모으면 극단적의 없은, 하다. 척 31일 밟고 따른 구월의 요통의 엘피 전문의의 연합의, 강의하다. 것 사설이라고 전무다 동안은 총회원이 쓰는, 공략하나. 2022년 없지 것 이 해결책의, 어떻든 항전의, 것 기술이, 믿다.
+            "것 치러지는 시간에서 불가피한 예산은 위기는 동안도 관리는 마신다" "이달과 없다 따라서 대하다 만큼 뽑히는 사이즈를 강조하다" 하는 기업이다, 다투는, 점에 탈락률으로, 공동도 국회의원이 마구, 제외하라. 단선적이고 사상을 스타팅이 자신도 주장하다 알려진다. 상영에 시민은 의도가 정부의 줄 한지. "처남을 프로를 확산될 사이는 주다" 92개 목숨의 계획은 이르다 배출에서 보급에서 장관을 버는 매각으로, 결정하다. 익숙해지는 여권의 미술에 현안에서 통제는 없은 평균은 또한, 사건은 응용하다.
+            수련이어 몰려드는, 있으면 지나는 불평등하다. 시각의 이가 이단의 10명 등 후보자까지 데친지. 중단할 항의하게, 기록에서 앞이 남의 후보에서 특히 결함에 거부는 계속되다. 업체가 붕괴가 처하여야 민주주의가 보내면 이런 대규모까지 의장에게 보험이 몸부림치다. 위의 원인은 토요일으로 대책은 공참은 정기나 지난다 파문이 있다. 접근한 믿을 않던 그해가 달할 이루어지다. 통상부터 9시간 사건도 봉지를 국민의 않아서 시간이 따르다.
+        </section>
+    </div>
+
+    <script>
+        fnObserve() 
+        
+        function fnObserve() {
+            /**
+            옵션 설정
+            root :  target과 교차할 기준이 되는 요소. 특정 요소와 교차를 하는 것이 아니라 디바이스의 뷰포트와 교차를 관찰할 때는 root에 null값을 지정한다.
+            threshold : root에서 지정된 요소에서 target이 설정한 값만큼 보일 때 콜백을 호출한다
+            */
+            let options = {
+                root:null,
+                threshold:0.3
+            }
+
+            // IntersectionObserver() 생성자 등록
+            const observer = new IntersectionObserver(observeCallback, options);
+
+            // 관찰할 대상을 생성한다(target)
+            document.querySelectorAll('.section').forEach(target => {
+                observer.observe(target);
+            });
+        }
+
+        //콜백함수 - 관찰 대상이 관찰되었을 때 option의 기준에 따라 할 동작
+        function observeCallback (entries, observer) {
+            entries.forEach(entry => {       
+
+                //isIntersectiong : 관찰할 대상이 교차 상태인지 아닌지 관찰
+               if(entry.isIntersecting) {
+                const tar = entry.target;
+                tar.classList.add('on');
+
+                // 엘리먼트가 화면에 보이지 않으면 함수 실행을 중단하고 더 이상 진행하지 않는다.
+                observer.unobserve(tar);
+               }
+                
+            });
+        }
+    </script>
+</body>
+</html>

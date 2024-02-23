@@ -1,0 +1,274 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR';
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+#header-wrap, #footer-wrap {
+    height: 100vh;
+    background-color: #a8a8a8;
+    text-align: center;
+    font-size: 30rem;
+}
+.inner {
+  position: relative;
+  z-index: 1;
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: 114px;
+}
+
+.membership-benefit {
+  position: relative;
+  height: 550vh;
+  background-color: #5772E8;
+}
+
+.benefit-wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.benefit-wrap .inner {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+  padding: 0 0 85px;
+  height: 100%;
+  align-items: center;
+}
+
+.benefit-wrap .cmn-content-head {
+  min-width: 600px;
+  margin-bottom: 0;
+  color: #FFFFFF;
+}
+
+.benefit-wrap .cmn-content-head h1 {
+  color: #FFFFFF;
+  font-size: 50px;
+  line-height: 61px;
+}
+
+.benefit-wrap .cmn-content-head .exp {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.benefit-item-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-basis: calc(50% + 63px);
+}
+
+.benefit-item-wrap .benefit-item {
+  position: absolute;
+  top: 24.6vh;
+  left: 50%;
+  width: 45.64vh;
+  min-width: 435px;
+  max-width: 435px;
+  height: 62.95vh;
+  max-height: 600px;
+  min-height: 600px;
+  padding: 37px 40px 40px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, #FFFFFF 100%) 0% 0% no-repeat;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 40px 60px rgba(87, 114, 232, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+  transition-property: transform, opacity;
+  transform-origin: -150% 150%;
+  transform: translateX(-42%);
+}
+
+.benefit-item-wrap .benefit-item:nth-child(1) {
+  z-index: 6;
+  transform: translateX(-46%) translateY(-2%) rotate(-8deg);
+}
+
+.benefit-item-wrap .benefit-item:nth-child(2) {
+  z-index: 5;
+}
+
+.benefit-item-wrap .benefit-item:nth-child(3) {
+  z-index: 4;
+  transform: translateX(-50.8%) translateY(-12%) rotate(6deg);
+}
+
+.benefit-item-wrap .benefit-item:nth-child(4) {
+  z-index: 3;
+  transform: translateX(-62%) translateY(-25%) rotate(12deg);
+}
+
+.benefit-item-wrap .benefit-item:nth-child(5) {
+  z-index: 2;
+  transform: translateX(-68%) translateY(-40%) rotate(18deg);
+  opacity: 0;
+}
+
+.benefit-item-wrap .benefit-item:nth-child(6) {
+  z-index: 1;
+  transform: translateX(-77%) translateY(-54%) rotate(24deg);
+  opacity: 0;
+}
+
+.benefit-item-wrap.card-2-active .benefit-item:nth-child(1) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-2-active .benefit-item:nth-child(2) {
+  transform: translateX(-46%) translateY(-2%) rotate(-8deg);
+}
+
+.benefit-item-wrap.card-2-active .benefit-item:nth-child(3) {
+  transform: translateX(-42%) translateY(0) rotate(0);
+}
+
+.benefit-item-wrap.card-2-active .benefit-item:nth-child(4) {
+  transform: translateX(-50.8%) translateY(-12%) rotate(6deg);
+}
+
+.benefit-item-wrap.card-2-active .benefit-item:nth-child(5) {
+  transform: translateX(-62%) translateY(-25%) rotate(12deg);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-2-active .benefit-item:nth-child(6) {
+  transform: translateX(-68%) translateY(-40%) rotate(18deg);
+  opacity: 0;
+}
+
+.benefit-item-wrap.card-3-active .benefit-item:nth-child(1) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-3-active .benefit-item:nth-child(2) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-3-active .benefit-item:nth-child(3) {
+  transform: translateX(-46%) translateY(-2%) rotate(-8deg);
+}
+
+.benefit-item-wrap.card-3-active .benefit-item:nth-child(4) {
+  transform: translateX(-42%) translateY(0) rotate(0);
+}
+
+.benefit-item-wrap.card-3-active .benefit-item:nth-child(5) {
+  transform: translateX(-50.8%) translateY(-12%) rotate(6deg);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-3-active .benefit-item:nth-child(6) {
+  transform: translateX(-62%) translateY(-25%) rotate(12deg);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-4-active .benefit-item:nth-child(1) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-4-active .benefit-item:nth-child(2) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-4-active .benefit-item:nth-child(3) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-4-active .benefit-item:nth-child(4) {
+  transform: translateX(-46%) translateY(-2%) rotate(-8deg);
+}
+
+.benefit-item-wrap.card-4-active .benefit-item:nth-child(5) {
+  transform: translateX(-42%) translateY(0) rotate(0);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-4-active .benefit-item:nth-child(6) {
+  transform: translateX(-50.8%) translateY(-12%) rotate(6deg);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-5-active .benefit-item:nth-child(1) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-5-active .benefit-item:nth-child(2) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-5-active .benefit-item:nth-child(3) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-5-active .benefit-item:nth-child(4) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-5-active .benefit-item:nth-child(5) {
+  transform: translateX(-46%) translateY(-2%) rotate(-8deg);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-5-active .benefit-item:nth-child(6) {
+  transform: translateX(-42%) translateY(0) rotate(0);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-6-active .benefit-item:nth-child(1) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-6-active .benefit-item:nth-child(2) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-6-active .benefit-item:nth-child(3) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-6-active .benefit-item:nth-child(4) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+}
+
+.benefit-item-wrap.card-6-active .benefit-item:nth-child(5) {
+  transform: translateX(-59%) translateY(-200vh) rotate(-18deg);
+  opacity: 1;
+}
+
+.benefit-item-wrap.card-6-active .benefit-item:nth-child(6) {
+  transform: translateX(-46%) translateY(-2%) rotate(-8deg);
+  opacity: 1;
+}
