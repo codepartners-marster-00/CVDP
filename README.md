@@ -26,19 +26,19 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 #### CVDP-S3
 > __2023.09 ~ 2023.11__
 > - [ GNB ] <br> 
-> 👉 [ by ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_by.html) <br>
-> 👉 [ tm ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_tm.html) <br>
+> 👉 [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_by.html) <br>
+> 👉 [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_tm.html) <br>
 >   <br>
 > - [ scroll ] <br>
 > 👉 [tm의 Intersection Observer API 활용 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest02_SCROLL/intersection_api_tm.html) <br>
 >   <br>
 > - [ Tab ] <br>
-> 👉 [ by ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_by.html) <br>
-> 👉 [ tm ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_tm.html) <br>
+> 👉 [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_by.html) <br>
+> 👉 [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_tm.html) <br>
 > 👉 [by의 TabFocus - accessibility ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/TabFocus_by.html) <br>
 >   <br>
-> - [ 실무응용 ] <br>
-> 👉 [yijo의 카드 애니메이션 ](https://codepartners-marster-00.github.io/CVDP/CPCS24-result/yijo/cardAnimation/index.html) <br>
+> - [ 실무응용 ] <br> 
+> 👉 [yijo의 카드 애니메이션 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-result/yijo/cardAnimation/index.html) <br>
 
 <br>
 
