@@ -23,7 +23,7 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 <br>
 
 ## 진행중인 시즌
-#### CVDP-S3
+#### CVDP-24S1
 > __2023.09 ~ 2023.11__
 > - [ GNB ] <br> 
 > 👉 [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_by.html) <br>
