@@ -14,35 +14,54 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 <br>
 
 ## 출제 미션
-##### ㆍ스크롤 이벤트를 제어해보세요 [ex-Scroll](https://codepartners-marster-00.github.io/CVDP/CPCS23-S2-JS/quest01/Quest01.html)
-##### ㆍ탭 기능을 활성화 해보세요 [ex-Tab](https://codepartners-marster-00.github.io/CVDP/CPCS23-S1-JS/quest02/Quest02.html)
-##### ㆍGNB에 2depth를 노출해보세요 [ex-GNB](https://codepartners-marster-00.github.io/CVDP/CPCS23-S1-JS/quest01/Quest01.html)
+##### ㆍ스크롤 이벤트를 제어해보세요 [ex-Event:Phase](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_.html)
+##### ㆍ스크롤 이벤트를 제어해보세요 [ex-Scroll](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest03_SCROLL/Quest_SCROLL_.html)
+##### ㆍ탭 기능을 활성화 해보세요 [ex-Tab](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest02_TAB/Quest_TAB_.html)
+##### ㆍGNB에 2depth를 노출해보세요 [ex-GNB](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest01_GNB/Quest_GNB_.html)
 ##### ㆍ실무에서 작성한 코드를 등록해보세요
 ##### ㆍ코드 오류를 발견하고 해결한 적 있나요? 공유해주세요!
 
 <br>
 
 ## 진행중인 시즌
-#### CVDP-24S1
-> __2023.09 ~ 2023.11__
+#### CVDP-24S2
+> __2024.03 ~ 2024.04__
 > - [ GNB ] <br> 
-> 👉 [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_by.html) <br>
-> 👉 [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_tm.html) <br>
+> 👉 [  ] <br>
 >   <br>
 > - [ scroll ] <br>
-> 👉 [tm의 Intersection Observer API 활용 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest02_SCROLL/intersection_api_tm.html) <br>
+> 👉 [ ] <br>
 >   <br>
 > - [ Tab ] <br>
-> 👉 [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_by.html) <br>
-> 👉 [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_tm.html) <br>
-> 👉 [by의 TabFocus - accessibility ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/TabFocus_by.html) <br>
+> 👉 [  ] <br>
+>   <br>
+> - [ Event : Phase ] <br>
+> 👉 [  ] <br>
 >   <br>
 > - [ 실무응용 ] <br> 
-> 👉 [yijo의 카드 애니메이션 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-result/yijo/cardAnimation/index.html) <br>
+> 👉 [ ] <br>
 
 <br>
 
 ## 지난 시즌
+#### CVDP-24S1
+> __2024.01 ~ 2024.02__
+> - [ GNB ] <br> 
+> ✔ [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_by.html) <br>
+> ✔ [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest01_GNB/Quest_GNB_tm.html) <br>
+>   <br>
+> - [ scroll ] <br>
+> ✔ [tm의 Intersection Observer API 활용 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest02_SCROLL/intersection_api_tm.html) <br>
+>   <br>
+> - [ Tab ] <br>
+> ✔ [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_by.html) <br>
+> ✔ [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/Quest_TAB_tm.html) <br>
+> ✔ [by의 TabFocus - accessibility ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S1-JS/quest03_TAB/TabFocus_by.html) <br>
+>   <br>
+> - [ 실무응용 ] <br> 
+> ✔ [yijo의 카드 애니메이션 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-result/yijo/cardAnimation/index.html) <br>
+
+
 #### CPCS-23S3
 > __2023.09-2023.11__ <br>
 > - [ GNB ] <br> 
@@ -50,20 +69,20 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 > ✔ [hr의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_hr.html) <br>
 > ✔ [joe의 첫 미션 클리어!](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest_GNB_joe.html) <br>
 > ✔ [tm의 미션 클리어 ](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest01_GNB/Quest-GNB_tm.html) <br>
-> ✔ [yi의 첫 미션 클리어! ](https://codepartners-marster-00.github.io/CVDP/CPCS23-result-code07/Quest_GNB_thumb.html) <br>
+> ✔ [yi의 첫 미션 클리어! ](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code07/Quest_GNB_thumb.html) <br>
 >   <br>
 > - [ Tab ] <br>
 > ✔ [by의 강화버전](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest03_TAB/Quest_TAB_by.html) <br>
 > ✔ [hr의 미션 클리어](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest03_TAB/Quest_TAB_hr.html) <br>
 > ✔ [joe의 미션 클리어](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest03_TAB/Quest_TAB_joe.html) <br>
 > ✔ [tm의 미션 클리어](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest03_TAB/Quest_TAB_tm.html) <br>
-> ✔ [yi의 첫 미션 클리어! ](https://codepartners-marster-00.github.io/CVDP/CPCS23-result-code07/Quest_TAB_thumb.html) <br>
+> ✔ [yi의 첫 미션 클리어! ](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code07/Quest_TAB_thumb.html) <br>
 >   <br>
 > - [ scroll ] <br>
 > ✔ [hr의 scroll은 이렇게!~](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest02_SCROLL/Quest_SCROLL_hr.html) <br>
 > ✔ [joe의 scroll은 저렇게!~](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest02_SCROLL/Quest_SCROLL_joe.html) <br>
 > ✔ [tm의 scroll 강화버전 ](https://codepartners-marster-00.github.io/CVDP/CVDP23-S3-JS/quest02_SCROLL/Quest_SCROLL_tm.html) <br>
-> ✔ [yi의 첫 미션 클리어! ](https://codepartners-marster-00.github.io/CVDP/CPCS23-result-code07/Quest_SCROLL_thumb.html) <br>
+> ✔ [yi의 첫 미션 클리어! ](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code07/Quest_SCROLL_thumb.html) <br>
 >   <br>
 > - [ 실무응용 ] <br>
 > ✔ [hj의select를 동적으로 만들어보자 ](https://codepartners-marster-00.github.io/CVDP/CPCS23-result/code08/selectboxCreate/index.html) <br>
