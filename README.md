@@ -9,12 +9,13 @@
 <br>
 
 ## 💝 __News *!*__
+__시즌 24S2부터 `Event:Phase`에 대한 미션이 추가되었습니다__
 __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다__
 
 <br>
 
 ## 출제 미션
-##### ㆍ스크롤 이벤트를 제어해보세요 [ex-Event:Phase](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_.html)
+##### ㆍ이벤트에 대한 버블링/캡쳐링을 제어해보세요 [ex-Event:Phase](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_.html)
 ##### ㆍ스크롤 이벤트를 제어해보세요 [ex-Scroll](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest03_SCROLL/Quest_SCROLL_.html)
 ##### ㆍ탭 기능을 활성화 해보세요 [ex-Tab](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest02_TAB/Quest_TAB_.html)
 ##### ㆍGNB에 2depth를 노출해보세요 [ex-GNB](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest01_GNB/Quest_GNB_.html)
