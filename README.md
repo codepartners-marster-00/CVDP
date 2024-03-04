@@ -9,7 +9,7 @@
 <br>
 
 ## 💝 __News *!*__
-__시즌 24S2부터 `Event:Phase`에 대한 미션이 추가되었습니다__
+__시즌 24S2부터 `Event Propagation`에 대한 미션이 추가되었습니다__ <br> 
 __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다__
 
 <br>
@@ -36,7 +36,7 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 > - [ Tab ] <br>
 > 👉 [  ] <br>
 >   <br>
-> - [ Event : Phase ] <br>
+> - [ Event : Propagation ] <br>
 > 👉 [  ] <br>
 >   <br>
 > - [ 실무응용 ] <br> 
