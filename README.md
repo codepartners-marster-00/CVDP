@@ -153,7 +153,10 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 ### ✒️ update history
 <table>
   <thead><tr><td>일자</td><td>내용</td><td>작성자</td></tr></thead>
-  <tbody>
+  <tbody> 
+    <tr><td>2024-03-04</td><td>24-S2 미션 Event : Propagation 추가 </td><td>윤성미</td></tr>
+    <tr><td>2024-02-23</td><td>24-S1 시즌 종료로 링크 추가, 아카이브 정리 </td><td>윤성미</td></tr>
+    <tr><td>2023-11-22</td><td>23-S3 컨텐츠 아카이브 추가 </td><td>윤성미</td></tr>
     <tr><td>2023-11-22</td><td>23-S3 컨텐츠 아카이브 추가 </td><td>윤성미</td></tr>
     <tr><td>2023-09-06</td><td>23-S1, S2 미션 링크 변경, 컨텐츠 수정</td><td>윤성미</td></tr>
     <tr><td>2023-09-06</td><td>시즌 링크 추가</td><td>윤성미</td></tr>
