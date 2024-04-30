@@ -27,20 +27,12 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 ## 진행중인 시즌
 #### CVDP-24S2
 > __2024.03 ~ 2024.04__
-> - [ GNB ] <br> 
-> 👉 [  ] <br>
->   <br>
-> - [ scroll ] <br>
-> 👉 [ ] <br>
->   <br>
-> - [ Tab ] <br>
-> 👉 [  ] <br>
->   <br>
 > - [ Event : Propagation ] <br>
-> 👉 [  ] <br>
+> 👉 [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_by.html) <br>
+> 👉 [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_tm.html) <br>
 >   <br>
 > - [ 실무응용 ] <br> 
-> 👉 [ ] <br>
+> 👉 [ by accordian ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_Bbb_accordian_by.html) <br>
 
 <br>
 
