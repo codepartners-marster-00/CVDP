@@ -32,7 +32,7 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 > 👉 [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_tm.html) <br>
 >   <br>
 > - [ 실무응용 ] <br> 
-> 👉 [ by accordian ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_Bbb_accordian_by.html) <br>
+> 👉 [ by Propagation accordian 활용 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_Bbb_accordian_by.html) <br>
 
 <br>
 
