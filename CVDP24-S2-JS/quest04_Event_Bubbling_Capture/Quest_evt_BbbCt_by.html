@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>Quest04 | EVENT | CVDP24-S2</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+
+	<style>
+		dl.eventInfo {
+			display: block;
+			margin: 20px;
+		}
+
+		dl.eventInfo dt {
+			margin-block: 10px;
+			font-weight: bold;
+		}
+
+		dl.eventInfo dd:not(:first-child) {
+			margin-top: 5px;
+			font-weight: bolder;
+		}
+	</style>
+</head>
+
+<body>
+	<header id="header">
+		<h1>Quest04 | EVENT-bubbling/capturing | CVDP24-S2</h1>
+	</header>
+
+	<!--  container -->
+	<div id="container" class="container Quest04">
+		<div class="wrap">
+
+			<section data-part="subject">
+				<h2>[1] EVENT 전파 </h2>
+				<p>
+					div2 요소의 두번째 자식 요소인 p2 요소를 클릭하면 클릭 이벤트가 발생합니다.<br>
+					이때 생성된 이벤트 객체는 <code>이벤트를 발생시킨 DOM 요소인 이벤트 타깃을 중심</code>으로 DOM 트리를 통해 전파됩니다.<br>
+				</p>
+				<ul>
+					<li><span>캡쳐링 단계 (capturing phase) : 이벤트가 상위 요소에서 하위 요소 방향으로 전파</span></li>
+					<li><span>타깃 단계 (target phase) : 이벤트가 이벤트 타깃에 도달</span></li>
+					<li><span>버블링 단계 (bubbling phase) : 이벤트가 하위 요소에서 상위 요소 방향으로 전파</span></li>
+				</ul>
+				<p class="task">
+					👇<span> 아래 div를 클릭해보세요.</span>
+				</p>
+				<div onclick="alert('div1')">div1
+					<div onclick="alert('div2')">div2
+						<p onclick="alert('p1')">p1</p>
+						<p onclick="alert('p2')">p2</p>
+					</div>
+				</div>
+
+				<p>***
+					<a href="https://www.freecodecamp.org/news/event-propagation-event-bubbling-event-catching-beginners-guide/#how-event-bubbling-happens-in-javascript"
+						target="_blank">
+						참고사이트_1_새창 열기</a>
+				</p>
+				<p>***
+					<a href="https://blog.bitsrc.io/event-bubbling-and-capturing-in-javascript-6bc908321b22"
+						target="_blank">
+						참고사이트_2_새창 열기</a>
+				</p>
+			</section>
+
+			<hr>
+
+			<section data-part="Perform">
+				<h2>[2] e.eventPhase 단계 이해</h2>
+				<article class="task">
+					<h3>🧙수행과제</h3>
+					<ul>
+						<li><span>div 선택 시, 하단의 <code>#evtPhase</code>에 이벤트 단계의 정보를 노출하세요 </span></li>
+						<li><span>선택된 div는 <code>style="background-color: red;"</code>를 추가하세요</span></li>
+						<li><span>체크박스 #evtChange를 통해 이벤트 단계(버블링/캡쳐링)를 전환하세요</span></li>
+					</ul>
+				</article>
+
+				<!-- 미션 시작  -->
+				<input type="checkbox" id="evtChange" name="use Capturing">
+				<label for="evtChange">캡쳐링으로 전환</label>
+				<div id="d1">d1
+					<div id="d2">d2
+						<div id="d3">d3
+							<div id="d4">d4
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="evtPhase"> <!-- 버블링/캡쳐링 로그 -->
+					<p>(예시) d1; event: target</p>
+					<p>(예시) d1; event: bubbling</p>
+				</div>
+
+				<script>
+					// 힌트!
+					let clear = false;
+					let divInfo = null;
+					let divs = null;
+					let evtChange = null;
+
+					window.onload = () => {
+						divInfo = document.getElementById("evtPhase");
+						divs = document.getElementsByTagName("div");
+						// HTML collection 유사배열을 배열로 만듬
+						const divsArray = Array.from(divs);
+						// 배열에서 필요한 부분만 추출(d1, d2, d3, d4)
+						const divsTarget = divsArray.splice(4, 4);
+
+						addListeners(false);
+
+						evtChange = document.getElementById("evtChange");
+						evtChange.onclick = () => {
+							removeListeners(evtChange.checked); // 이벤트 초기화
+							addListeners(evtChange.checked); // 이벤트 실행
+							clearDivs(); // 선택됐었던 div 초기화
+						};
+						clearDivs();
+
+						function clickEventDetail(e) {
+							changeColor(divsTarget, e);
+							createTag(divInfo, e.eventPhase, e);
+						}
+
+						function removeListeners(bool) {
+							divsTarget.forEach(target => {
+								target.removeEventListener('click', clickEventDetail, !bool);
+							});
+						}
+
+						function addListeners(bool) {
+							divsTarget.forEach(target => {
+								target.addEventListener('click', clickEventDetail, bool);
+							});
+						}
+
+						function clearDivs() {
+							divsTarget.forEach(el => {
+								el.style.backgroundColor = "#ffffff";
+							});
+							divInfo.innerText = ' ';
+							divInfo.appendChild(document.createElement('p')).innerText = `(예시) d1; event: target`
+							divInfo.appendChild(document.createElement('p')).innerText = `(예시) d1; event: bubbling`
+						}
+
+						function changeColor(white, red) {
+							white.forEach(el => {
+								el.style.backgroundColor = "#ffffff";
+							});
+							red.target.style.backgroundColor = "red";
+						}
+
+						function createTag(el, currentPhase, e) {
+							const pNew = document.createElement('p');
+							switch (currentPhase) {
+								case 1:
+									el.appendChild(pNew).innerText = `${e.currentTarget.id} : capturing`;
+									break;
+								case 2:
+									el.appendChild(pNew).innerText = `${e.target.id} : target`;
+									break;
+								case 3:
+									el.appendChild(pNew).innerText = `${e.currentTarget.id} : bubbling`;
+									break;
+							}
+						}
+
+					};
+
+					// 필요한 내용
+					// 1. eventPhase 속성을 이용해 현재의 이벤트 단계를 확인
+					// 2. 선택된 div에 추가될 스타일 : e.currentTarget.style.backgroundColor = "red";
+					// 3. 정보 노출을 위한 요소 추가 : document.createElement("p");
+				</script>
+				<!-- 미션 끝 -->
+			</section>
+
+			<section>
+				<h2>[3] 이벤트 전파를 할 수 없는 경우</h2>
+				<p>
+					대부분의 이벤트는 캡쳐링과 버블링을 통해 전파되지만, 다음 이벤트의 경우 버블링이 전파되지 않을 수 있습니다.<br>
+					이 이벤트들은 event.bubbles의 값이 모두 false입니다.<br><br>
+					* event.bubbles : 버블링을 통해 이벤트를 전파하는지 여부를 나타내는 이벤트 객체의 공통 프로퍼티
+				</p>
+				<ul>
+					<li><span>포커스 이벤트 focus/blur</span></li>
+					<li><span>리소스 이벤트 load/unload/abort/errer</li>
+					<li><span>마우스 이벤트 mouseenter/mouseleave</span></li>
+				</ul>
+				<p>
+					이벤트 타깃의 상위 요소에서 이벤트를 캐치하려면 캡쳐링 단계의 이벤트를 캐치해야 합니다.
+				</p>
+				<p class="task">
+					<span>또는, 이에 따라 대응할 수 있는 대체 이벤트는 무엇이 있을지 찾아보세요!</span>🎁
+				</p>
+
+				<dl class="eventInfo">
+					<dt>포커스 이벤트 focus/blur</dt>
+					<dd>1. focusin/focusout을 사용하면 버블링/캡쳐링 가능</dd>
+				</dl>
+				<dl class="eventInfo">
+					<dt>리소스 이벤트 load/unload/abort/errer</dt>
+					<dd>1. </dd>
+				</dl>
+				<dl class="eventInfo">
+					<dt>마우스 이벤트 mouseenter/mouseleave</dt>
+					<dd>1. mouseOver/mouseOut을 사용하면 버블링/캡쳐링 가능</dd>
+				</dl>
+			</section>
+
+
+		</div>
+	</div>
+	<!-- // container -->
+	<footer id="footer"></footer>
+
+	<script>
+
+	</script>
+</body>
+
+</html>
