@@ -9,8 +9,9 @@
 <br>
 
 ## 💝 __News *!*__
-__시즌 24S2부터 `Event Propagation`에 대한 미션이 추가되었습니다__ <br> 
-__2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다__
+__ㆍ Confluence Space 'cp-cvdp-depot'가 생성되었습니다__ <br>
+_ㆍ 시즌 24S2부터 `Event Propagation`에 대한 미션이 추가되었습니다_ <br> 
+_ㆍ 2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니다_
 
 <br>
 
@@ -25,18 +26,21 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 <br>
 
 ## 진행중인 시즌
-#### CVDP-24S2
-> __2024.03 ~ 2024.04__
-> - [ Event : Propagation ] <br>
-> 👉 [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_by.html) <br>
-> 👉 [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_tm.html) <br>
->   <br>
-> - [ 실무응용 ] <br> 
-> 👉 [ by Propagation accordian 활용 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_Bbb_accordian_by.html) <br>
+> [ cp-cvdp-depot : 컨플루언스 스페이스 ](https://cp-cvdp.atlassian.net/wiki/x/3gAG) <br>
 
 <br>
 
 ## 지난 시즌
+#### CVDP-24S2
+> __2024.03 ~ 2024.04__
+> - [ Event : Propagation ] <br>
+> ✔ [ by revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_by.html) <br>
+> ✔ [ tm revision ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_evt_BbbCt_tm.html) <br>
+>   <br>
+> - [ 실무응용 ] <br> 
+> ✔ [ by Propagation accordian 활용 ](https://codepartners-marster-00.github.io/CVDP/CVDP24-S2-JS/quest04_Event_Bubbling_Capture/Quest_Bbb_accordian_by.html) <br>
+
+
 #### CVDP-24S1
 > __2024.01 ~ 2024.02__
 > - [ GNB ] <br> 
@@ -146,13 +150,14 @@ __2023.09의 시즌부터 `CPCS` 에서 `CVDP`로 명칭이 변경되었습니�
 <table>
   <thead><tr><td>일자</td><td>내용</td><td>작성자</td></tr></thead>
   <tbody> 
-    <tr><td>2024-03-04</td><td>24-S2 미션 Event : Propagation 추가 </td><td>윤성미</td></tr>
-    <tr><td>2024-02-23</td><td>24-S1 시즌 종료로 링크 추가, 아카이브 정리 </td><td>윤성미</td></tr>
-    <tr><td>2023-11-22</td><td>23-S3 컨텐츠 아카이브 추가 </td><td>윤성미</td></tr>
-    <tr><td>2023-11-22</td><td>23-S3 컨텐츠 아카이브 추가 </td><td>윤성미</td></tr>
-    <tr><td>2023-09-06</td><td>23-S1, S2 미션 링크 변경, 컨텐츠 수정</td><td>윤성미</td></tr>
-    <tr><td>2023-09-06</td><td>시즌 링크 추가</td><td>윤성미</td></tr>
-    <tr><td>2023-09-05</td><td>생성, 문서 문단 정의</td><td>윤성미</td></tr>
+    <tr><td>2024-06-26</td><td>컨플루언스 스페이스 추가 </td><td></td></tr>
+    <tr><td>2024-03-04</td><td>24-S2 미션 Event : Propagation 추가 </td><td></td></tr>
+    <tr><td>2024-02-23</td><td>24-S1 시즌 종료로 링크 추가, 아카이브 정리 </td><td></td></tr>
+    <tr><td>2023-11-22</td><td>23-S3 컨텐츠 아카이브 추가 </td><td></td></tr>
+    <tr><td>2023-11-22</td><td>23-S3 컨텐츠 아카이브 추가 </td><td></td></tr>
+    <tr><td>2023-09-06</td><td>23-S1, S2 미션 링크 변경, 컨텐츠 수정</td><td></td></tr>
+    <tr><td>2023-09-06</td><td>시즌 링크 추가</td><td></td></tr>
+    <tr><td>2023-09-05</td><td>생성, 문서 문단 정의</td><td></td></tr>
   </tbody>
 </table>
 
